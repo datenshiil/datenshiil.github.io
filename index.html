@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="The personal space of 黒猫堕天.">
+  <title>堕天使 — 黒猫堕天</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="preload"
+  as="image"
+  href="assets/datenshi-background.png"
+  fetchpriority="high"
+>
+</head>
+<body>
+  <div class="embers" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="feather-layer" id="featherLayer" aria-hidden="true"></div>
+
+  <main>
+    <section class="gate" id="gate" aria-label="Welcome">
+      <div class="gate-frame" aria-hidden="true">
+        <img class="entry-piece top-left" src="assets/entry-frame/piece-top-left.png" alt="">
+        <img class="entry-piece top-left glow" src="assets/entry-frame/piece-top-left-glow.png" alt="">
+        <img class="entry-piece top-center" src="assets/entry-frame/piece-top-center.png" alt="">
+        <img class="entry-piece top-center glow" src="assets/entry-frame/piece-top-center-glow.png" alt="">
+        <img class="entry-piece top-right" src="assets/entry-frame/piece-top-right.png" alt="">
+        <img class="entry-piece top-right glow" src="assets/entry-frame/piece-top-right-glow.png" alt="">
+        <img class="entry-piece bottom-left" src="assets/entry-frame/piece-bottom-left.png" alt="">
+        <img class="entry-piece bottom-left glow" src="assets/entry-frame/piece-bottom-left-glow.png" alt="">
+        <img class="entry-piece bottom-center" src="assets/entry-frame/piece-bottom-center.png" alt="">
+        <img class="entry-piece bottom-center glow" src="assets/entry-frame/piece-bottom-center-glow.png" alt="">
+        <img class="entry-piece bottom-right" src="assets/entry-frame/piece-bottom-right.png" alt="">
+        <img class="entry-piece bottom-right glow" src="assets/entry-frame/piece-bottom-right-glow.png" alt="">
+      </div>
+      <button class="celestial-enter" id="enterButton" type="button" aria-label="Click here to enter">
+        <span class="celestial-ring" aria-hidden="true">
+          <img class="emblem-base" src="assets/entry-static/center-emblem.png" alt="">
+          <img class="emblem-glow" src="assets/entry-static/center-emblem-glow.png" alt="">
+        </span>
+        <span class="enter-caption">堕ちていく….</span>
+      </button>
+    </section>
+
+    <section class="site hidden" id="site" aria-label="Personal homepage">
+      <div class="home-borders" aria-hidden="true">
+        <img class="home-border left" src="assets/left-border.png" alt="">
+        <img class="home-border left glow" src="assets/left-border-glow.png" alt="">
+        <img class="home-border right" src="assets/right-border.png" alt="">
+        <img class="home-border right glow" src="assets/right-border-glow.png" alt="">
+      </div>
+      <div class="home-ornaments" aria-hidden="true">
+        <i class="corner tl"></i><i class="corner tr"></i>
+        <i class="corner bl"></i><i class="corner br"></i>
+        <span class="frame-flourish top"></span><span class="frame-flourish bottom"></span>
+      </div>
+      <header class="topbar">
+        <a class="wordmark" href="#" aria-label="Back to top">堕天使 <span>/ DATENSHI</span></a>
+        <div class="status">黒猫堕天</div>
+      </header>
+
+      <div class="home-content">
+        <section class="identity">
+          <p class="eyebrow">— DATENSHI —</p>
+          <h1>黒猫堕天</h1>
+          <p class="japanese-about">れんは…ただの借り物の名前だ。だが、あなたが私の人となりと、私がしてきたことを覚えていれば…私はれんになる。</p>
+        </section>
+
+        <div class="content-grid">
+          <section class="panel links">
+            <h2>隠れ家</h2>
+            <div class="link-list">
+              <a href="https://youtube.com/channel/UC-6zdEnOCR8qzkafQ-fEXJw" class="link-row" target="_blank" rel="noopener noreferrer"><span>YouTube</span><span>↗</span></a>
+              <a href="https://www.twitch.tv/kuronekodaten_" class="link-row" target="_blank" rel="noopener noreferrer"><span>Twitch</span><span>↗</span></a>
+              <a href="https://x.com/TsuchimikadoLEN" class="link-row" target="_blank" rel="noopener noreferrer"><span>X / Twitter</span><span>↗</span></a>
+              <a href="#" class="link-row placeholder" aria-label="Add your Discord link"><span>Discord</span><span>↗</span></a>
+              <a href="https://steamcommunity.com/profiles/76561199285577678/" class="link-row" target="_blank" rel="noopener noreferrer"><span>Steam</span><span>↗</span></a>
+            </div>
+          </section>
+
+          <section class="panel games">
+            <h2>戦場</h2>
+            <div class="game-list">
+              <div class="game-row"><span class="game-index">01</span><span>Overwatch</span><span class="coming">NAKIRIAYAME#2660</span></div>
+              <div class="game-row"><span class="game-index">02</span><span>TEKKEN</span><span class="coming"> </span></div>
+            </div>
+
+            <div class="volume-control">
+              <label for="volumeSlider">MUSIC VOLUME <span id="volumeValue">60%</span></label>
+              <input id="volumeSlider" type="range" min="0" max="100" value="60">
+            </div>
+            <div class="music-player">
+              <button id="playButton" class="play-button" type="button" aria-label="Play or pause music">Ⅱ</button>
+              <div class="track-info">
+                <strong>MY FLAWS BURN THROUGH MY SKIN LIKE DEMONIC FLAMES FROM HELL</strong>
+                <span>$UICIDEBOY$ · BACKGROUND SOUNDTRACK</span>
+              </div>
+            </div>
+            <p class="hint" id="musicHint">Click enter to begin listening.</p>
+          </section>
+        </div>
+      </div>
+
+      <footer>
+        <span>物の哀れ</span>
+        <span>記憶が残る場所…触れられるのは、棘のある花ばかりだ…</span>
+        <a href="#top" id="backTop">BACK TO TOP ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <audio id="audio" src="assets/music.mp3" loop preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
